@@ -32,4 +32,30 @@ public class Main {
 
     }
 
+    public static void task2() {
+        int[] arr = generateRandomArray();
+        System.out.println("Задача 2");
+        //System.out.println(Arrays.toString(arr));
+
+        //min
+        int min = arr[0];
+        for (int j : arr) {
+            if (min > j) {
+                min = j;
+            }
+        }
+
+
+        //max
+        int max = arr[0];
+        for (int j : arr) {
+            if (max < j) {
+                max = j;
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составила " + min + " рублей. Максимальная сумма трат за день составила " + max + " рублей");
+        System.out.println(" ");
+
+    }
+
 }
